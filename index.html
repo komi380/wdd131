@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="komi richard AKOUNALO">
-    <title>WDD 131 – Dynamic Web Fundamentals – komi richard AKOUNALO</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – komi richard AKOUNALO A basic HTML layout example">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@400;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – komi richard AKOUNALO</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | komi richard AKOUNALO | Home page assignment with personal intro and web development interests." >
+  <meta name="author" content="komi richard AKOUNALO" >
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-     <span id="cours-title">WDD 131 – Dynamic Web Fundamentals</span>
-     <nav>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/komi-richard-akounalo-8147a7357/" title="LinkedIn">LinkedIn</a></li>
-            <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/4?lang=fra&id=p6#p6" title="Scripture">Scripture</a></li>
-            <li><a href="#" title="Final Project ">Final Project </a></li>
-        </ul>
-     </nav>
-    </header>
-    <main>
-        <h1>komi richard AKOUNALO</h1>
-     <section class="card">
-        <header>About me</header>
-        <p>Hello, my name is komi richard akounalo. I am a current student in Software Development, where I developed strong problem-solving and analytical skills. Over time, I grew particularly interested in web development because
-           it allows me to combine creativity with technology to build user-friendly applications. What excites me most about web development is the continuous learning—since technologies evolve quickly, there’s always something new to explore.
-           I am especially interested in UI/UX design, responsive web apps, and full-stack development, with a goal of creating solutions that are both functional and accessible.</p>
-           <img src="images/profile.jpg" alt="About me">
-     </section>
-     <section class="card">
-        <header>Web resources</header>
-        <img src="images/web-resources.jpg" alt="Web resources">
-        <ul>
-            <li><a href="#" title="HTML5">HTML5</a></li>
-            <li><a href="#" title="CSS3">CSS3</a></li>
-            <li><a href="#" title="JavaScript">JavaScript</a></li>
-            <li><a href="#" title="Web Accessibility">Web Accessibility</a></li>
-        </ul>
-     </section>
-    </main>
-    <footer>
-      <p>© <span id="currentyear"></span>※ komi richard AKOUNALO ※, Togo</p>
-      <P id="lastModified"></P>
-    </footer>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/in/komi-richard-akounalo-8147a7357/" title="LinkedIn" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" title="Canvas">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/4?lang=fra&id=p6#p6" title="Scripture" target="_blank">Scripture</a>
+      <a href="#" title="Final Project">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>komi richard AKOUNALO</h1>
+
+    <div class="cards">
+      <section class="card">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile picture">
+        <p>
+          Hello, my name is komi richard AKOUNALO. I am from Togo. I enjoy learning
+          about web development and creating responsive websites. My background
+          includes a focus on front-end technologies and a passion for user experience.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Web Development Interests</h2>
+        <img src="images/web-resources.jpg" alt="Web development illustration">
+        <p>
+          I love building projects with HTML, CSS, and JavaScript. My current
+          interests include responsive design, accessibility, and learning
+          full-stack development to create complete web applications.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> | komi richard AKOUNALO | Togo
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
+</html>

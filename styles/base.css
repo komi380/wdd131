@@ -1,13 +1,27 @@
-/* Import Google Fonts */
-body {
-    font-family: 'Open Sans', 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: #252424;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary: #2c3e50;
+  --accent: #f39c12;
+  --light: #f4f4f4;
+  --dark: #333;
 }
 
-/* Header Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Header */
 header {
     background-color:#4547be;
 	padding: 0rem;
@@ -40,7 +54,7 @@ nav ul {
     list-style: none;
 }
 nav a {
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 0%.5rem 0;
     margin: 0.5rem;
@@ -56,58 +70,49 @@ nav ul li {
     flex: 1 1 auto;
 }
 
-/* Main content styling */
+/* Main */
 main {
-    max-width: 900px;
-    margin: 1rem auto;
-    padding: 1 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-weight: 900;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-/* Card style */
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
 .card {
-    background-color: rgb(245, 243, 243);
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
 .card h2 {
-    margin-bottom: 1rem;
-    font-weight: 400;
-    color: #a1b8cf;
+  margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
-    background-color: #4547be;
-    color: #ccc;
-    text-align: center;
-    padding: 3rem;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0.3rem 0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: var(--primary);
+  color: white;
 }
