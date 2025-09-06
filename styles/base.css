@@ -1,0 +1,113 @@
+/* Import Google Fonts */
+body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #252424;
+}
+
+/* Header Styling */
+header {
+    background-color:#4547be;
+	padding: 0rem;
+    margin: 1rem auto;
+	border: 0px solid wheat;
+	font-size: 1.5rem;
+	text-align: center;
+    color: white;
+}
+
+
+#course-title {
+   display: block;
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
+
+nav {
+    background-color: rgb(44, 39, 39);
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 1.5rem;
+}
+nav ul {
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+nav a {
+    display: block;
+    text-align: center;
+    padding: 0%.5rem 0;
+    margin: 0.5rem;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    border: 1px solid white;
+    color: #4547be;
+}
+nav ul li {
+    flex: 1 1 auto;
+}
+
+/* Main content styling */
+main {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 1 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Card style */
+.card {
+    background-color: rgb(245, 243, 243);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #a1b8cf;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4547be;
+    color: #ccc;
+    text-align: center;
+    padding: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
