@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: wheat;
+}
+
+header {
+	background-color: #3b8beb;
+	height: 100px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+#menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main {
+    max-width: 1000px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #8d8383;
+}
+
+.active {
+	color: yellow;
+}
+
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+}
+section {
+    margin: 1rem auto; 
+    max-width: 960px; 
+    padding: .5rem;
+}
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
+
+img { 
+    width: 100%; 
+    height: auto; 
+    margin: .5rem;
+}
+
+figcaption {
+    font-size: 1rem;
+	text-align: center;
+	margin-bottom: .5rem;
+}
+/* hover effect */
+.hover:hover {
+    box-shadow: 0 0 50px #95d2ee;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+footer {
+    background-color: #5DA2D5;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
