@@ -32,6 +32,8 @@ header {
 .card h2 img {
   width: 24px;
   height: 24px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .card {

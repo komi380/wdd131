@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
+<body>
   <header>
    <h1>REPUBLIC OF TOGO</h1>
   </header>
-  <body>
   <main>
   <section class="hero">
      <picture>
@@ -23,7 +23,6 @@
        <source media="(min-width: 601px)" srcset="images/hero-large.webp">          
        <img src="images/hero-large.webp" alt="Togo" width="400" height="200">
      </picture>
-      
       <div class="card data">
         <h2>Data</h2>
           <p><strong>Area:</strong> 587,041 sq km</p>
@@ -34,15 +33,11 @@
           <p><strong>Time Zone:</strong> UTC+0</p>
           <p><strong>Calling Code:</strong> +228</p>
           <p><strong>Internet TLD:</strong> .tg</p>
-
       </div>
-
       <div class="card weather">
         <h2>
            Weather
-          <span style="display: inline-flex; align-items: center;">
-            <img src="images/meteo.svg" alt=" meteo images">
-          </span>
+          <img src="images/meteo.svg" alt=" weather images">
         </h2>
         <p><strong>Temperature:</strong> <span id="temperature">25</span> °C</p>
         <p><strong>Conditions:</strong> Partly Cloudy</p>
@@ -51,7 +46,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>&copy;2025 komi richard AKOUNALO Togo</p>
     <p>Last Modification: <span id="lastModified"></span></p>
