@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="komi richard AKOUNALO">
+    <title>WDD 131 – Dynamic Web Fundamentals – Picture Album of Temples</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – komi richard AKOUNALO A Picture Album of Temples">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@400;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Temple Album</h1>
+        <button id="menu" aria-label="toggle menu">☰</button>
+        <nav class="navigation">
+          <ul>
+             <li><a href="#" data-filter="home" class="active">Home</a></li>
+             <li><a href="#" data-filter="old">Old</a></li>
+             <li><a href="#" data-filter="new">New</a></li>
+             <li><a href="#" data-filter="large">Large</a></li>
+             <li><a href="#" data-filter="small">Small</a></li>
+          </ul>
+        </nav>   
+    </header>
+    <main>
+      <section class="gallery">
+        <h2>Home</h2>
+        <div class="container">
+        </div>
+       </section>
+    </main>
+    <footer>
+      <p>© <span id="currentYear"></span>※ komi richard AKOUNALO ※, Togo</p>
+      <P id="lastModified"></P>
+    </footer>
+</body>
+</html>

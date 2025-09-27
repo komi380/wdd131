@@ -47,3 +47,8 @@ table {
 .blank {
   background-color: #000;
 }
+tbody {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  color: #333;
+}
