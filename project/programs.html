@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs | MILADOU Basketball</title>
+  <link rel="stylesheet" href="styles/project.css" />
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.webp" alt="MILADOU Logo" class="logo" />
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html" class="active">Programs</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="programs-intro reveal">
+      <h1>Our Training Programs</h1>
+      <p>Each level aims to improve technical skills, discipline, and team spirit. Discover the program that suits you!</p>
+    </section>
+
+    <section class="filter-section reveal">
+      <h2>Filter by program type</h2>
+      <select id="filterProgram">
+        <option value="all">All programs</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+    </section>
+
+    <section class="programs-list" id="programsList">
+      <article class="program-card reveal" data-level="Junior">
+        <img src="images/program-junior.webp" alt="Children playing basketball" class="program-img" loading="lazy" />
+        <h2>Junior Program</h2>
+        <p>For ages 8 to 13. Learning the basics: dribbling, passing, shooting, and team spirit.</p>
+        <p><strong>Days:</strong> Monday & Wednesday — <strong>Time:</strong> 4:00pm – 6:00pm</p>
+      </article>
+
+      <article class="program-card reveal" data-level="Senior">
+        <img src="images/program-senior.webp" alt="Teens in a basketball match" class="program-img" loading="lazy" />
+        <h2>Senior Program</h2>
+        <p>For ages 14 to 18. Advanced techniques, competition, and leadership development.</p>
+        <p><strong>Days:</strong> Tuesday & Thursday — <strong>Time:</strong> 5:00pm – 7:30pm</p>
+      </article>
+
+      <article class="program-card reveal" data-level="Advanced">
+        <img src="images/gallery4.webp" alt="Professional player" class="program-img" loading="lazy"/>
+        <h2>Advanced Program</h2>
+        <p>Intensive program with physical preparation, strategy, and mental coaching.</p>
+        <p><strong>Days:</strong> Friday & Saturday — <strong>Time:</strong> 9:00am – 12:00pm</p>
+      </article>
+    </section>
+
+    <!-- Pricing table -->
+    <section class="pricing reveal">
+      <h2>💰 Program Pricing</h2>
+      <p class="pricing-intro">Our prices are designed to be accessible to all basketball enthusiasts.</p>
+
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Program</th>
+            <th>Level</th>
+            <th>Frequency</th>
+            <th>Monthly Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="junior-row">
+            <td>🏀 Junior Program</td>
+            <td>Beginner (8–13 years)</td>
+            <td>2 sessions / week</td>
+            <td><strong>10,000 FCFA</strong></td>
+          </tr>
+          <tr class="senior-row">
+            <td>🔥 Senior Program</td>
+            <td>Intermediate (14–18 years)</td>
+            <td>2 sessions / week</td>
+            <td><strong>15,000 FCFA</strong></td>
+          </tr>
+          <tr class="advanced-row">
+            <td>💪 Advanced Program</td>
+            <td>Advanced / Pre-competition</td>
+            <td>3 sessions / week</td>
+            <td><strong>20,000 FCFA</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="pricing-note">💡 10% discount for a 3-month commitment.</p>
+    </section>
+
+    <!-- Signup form -->
+    <section class="signup-form reveal">
+      <h2>Registration Form</h2>
+      <form id="inscriptionForm">
+        <label>Full name:</label>
+        <input type="text" name="fullname" required>
+
+        <label>Age:</label>
+        <input type="number" name="age" required>
+
+        <label>Chosen program:</label>
+        <select name="program" required>
+          <option value="">-- Choose --</option>
+          <option value="Junior">Junior</option>
+          <option value="Senior">Senior</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <button type="submit" class="cta">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+ <footer>
+  <div class="social-links">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="facebook">
+      <img src="images/icon-facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="twitter">
+      <img src="images/icon-twitter.svg" alt="Twitter">
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="instagram">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+    </a>
+  </div>
+
+  <p class="muted">© 2025 MILADOU Basketball Program | Follow us on social medias</p>
+</footer>
+
+</body>
+</html>
